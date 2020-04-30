@@ -58,7 +58,7 @@ function expandWorkObj(obj_id){
     var longdescript = longDescriptMap.get(obj_id);
 
     var picdescript = picDescriptMap.get(obj_id);
-    console.log(picdescript);
+
     var descriptformat = descriptformatMap.get(obj_id);
     document.getElementById('expandedobj').style.opacity='1.0';
     document.getElementById('expandedphotos').style.opacity='1.0';
