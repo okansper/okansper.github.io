@@ -1,3 +1,4 @@
+
 $(document).ready(() => {
    hide('expandedobj');
    hide('expandedphotos');
