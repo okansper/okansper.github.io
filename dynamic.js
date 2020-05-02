@@ -1,3 +1,7 @@
+const longDescriptMap = new Map();
+const shortDescriptMap = new Map();
+const picDescriptMap = new Map();
+const descriptformatMap = new Map();
 
 $(document).ready(() => {
    hide('expandedobj');
@@ -104,10 +108,7 @@ function getCodeObj(){
       document.getElementById("codepic").style.opacity = "1";  
 }
 
-const longDescriptMap = new Map();
-const shortDescriptMap = new Map();
-const picDescriptMap = new Map();
-const descriptformatMap = new Map();
+
 shortDescriptMap.set('frisatsun', 'December 2017 <br> <i>Fri/Sat/Sun (Material Girl in a 3D world)</i>, a VR Play<br><div class="workdescript"><img src="index_files/fri.png" id="fripic" style="float:left;padding-right:5px;width:150px;height:100px;"> An interactive, immersive narrative piece created for Brown University\'s <a class="mylink" href="http://writing3d.xyz/#Cave%20Writing">CAVE VR space</a>. A study of mood and atmosphere, intimate places and interior dialogues through sound, language, and image.  <button type="button" onclick=\'expandWorkObj("frisatsun", "fripic")\'>SEE MORE...</button></div>');
 longDescriptMap.set('frisatsun', 'December 2017. <i>Fri/Sat/Sun (Material Girl in a 3D world)</i>, a VR Play<br><br>An interactive, immersive narrative piece created for Brown University\'s <a class="mylink" href="http://writing3d.xyz/#Cave%20Writing">CAVE VR space</a>. A study of mood and atmosphere, intimate places and interior dialogues through sound, language, and image. <br> <br> The ways in which texts such as music, movies, material objects, and critical theory mold experience are interrogated over the course of a fun weekend! The girls(?) in Fri/Sat/Sun both seek to process their lives through this web of texts/media, and struggle with ideas of selfhood and emotional “reality” in the face of this mediation. Here, the material takes center stage; differences between the “characters” and the “scenery” are elided, and dialogue, in a form reminiscent of the language of digital communication, is “texted” by both people and their props. The piece tries to find a form of theater commensurate to digital language and virtual experience. In taking seriously and taking pleasure in things, Fri/Sat/Sun is also interested in questioning the idea of human selfhood as independent from the materials and media that surround us.');
 picDescriptMap.set('frisatsun', '<img src="index_files/fri.png" id="fripic" style="position:fixed; left:25px; top:25px;width:450px;height:300px;">'+
@@ -122,6 +123,13 @@ picDescriptMap.set('courtdebt', "<img src='index_files/debt_ability.jpg' style='
         '<img src="index_files/debt_collection.png" style="position:fixed; left:500px; top:25px;width:350px;height:180px;">'+
         '<img src="index_files/debt_percent.png" style="position:fixed; left:500px; top:240px;width:240px;height:170px;">')
 descriptformatMap.set('courtdebt', 'position:fixed; left:510px; top:450px; width:450px; height:300px;')
+
+shortDescriptMap.set('mermaid', 'December 2016 <br> Video/audio/digitally mediated performance: <i>the Drowning</i> or <i>Adventures of a GoPro</i><br><br><div class="workdescript"><img class=\'workpic\' src="index_files/mermaidpic.jpg" style="float:left;padding-right:5px;width:150px;height:100px;">Cheap, water-proof cameras have birthed an obscure Youtube genre: dads and surfers showing off their GoPros, only to have them ripped away by waves, the camera recording its own drowning. At the same time, the deep sea remains one of the most unexplored areas of the Earth, and discoveries rely on cameras that sit on the ocean-floor, recording the marine life that passes by. This immersive audiovisual performance combines these cinematic forms to explore: fact vs. fiction, man vs. ocean, sailor vs. mermaid, and male gaze vs. female subjectivity in the digital age. Found footage --> cam found by mermaid and used to create deep sea creature pageant play. With Marcel Zaes (music composition) and Maurice Decaul (music text).<button type="button" onclick=\'expandWorkObj("mermaid")\'>SEE MORE</button>');
+longDescriptMap.set('mermaid', 'December 2016 <br> Video/audio/digitally mediated performance: <i>the Drowning</i> or <i>Adventures of a GoPro</i><br><br><div class="workdescript">Cheap, water-proof cameras have birthed an obscure Youtube genre: dads and surfers showing off their GoPros, only to have them ripped away by waves, the camera recording its own drowning. At the same time, the deep sea remains one of the most unexplored areas of the Earth, and discoveries rely on cameras that sit on the ocean-floor, recording the marine life that passes by. This immersive audiovisual performance combines these cinematic forms to explore: fact vs. fiction, man vs. ocean, sailor vs. mermaid, and male gaze vs. female subjectivity in the digital age. Found footage --> cam found by mermaid and used to create deep sea creature pageant play. With Marcel Zaes (music composition) and Maurice Decaul (music text).');
+descriptformatMap.set('mermaid', 'position:fixed; width:460px; left:510px; top:350px; background-color: #gray; z-index:10; padding-right: 25px');
+picDescriptMap.set('mermaid', "<img src='index_files/mermaidpic.jpg' style='position:fixed; left:25px; top:25px;width:450px;height:300px;'\>"+
+        '<img src="index_files/mermaid1.png" style="position:fixed; left:25px; top:350px;width:450px;height:300px;opacity:1.0;">'+
+        '<img src="index_files/mermaid_broad.png" style="position:fixed; left:500px; top:25px;width:450px;height:300px;">')
 
 /*shortDescriptMap.set('mermaid', 'December 2016 <br> Digital Performance class: <i>Mermaid/Dark Night</i><br><div class="workdescript"><img src="index_files/mermaidpic.jpg" style="float:left;padding-right:5px;width:150px;height:100px;">Installation/performance project/opera: ideo created from found Youtube footage of GoPros swept away from their owners and into the waves --> found by mermaid and used to create deep sea creature panorama. With Marcel Zaes (music composition) and Maurice Decaul (music text).<button type="button" onclick="expandWorkObj("mermaid")">WATCH HERE</button></div>');
 picDescriptMap.set('mermaid', '<video id="mermaidvid" width="960px" height="540px" controls><source src="index_files/mermaid.mp4" type="video/mp4"></video>');
