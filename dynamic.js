@@ -12,6 +12,29 @@ var FADEDOPACITY = '0.05';
 let banner;
 banner = $('#fountainpic');
 
+function hide_elem(class_name) {
+  var list_class_elem = document.getElementsByClassName(class_name);
+    var i;
+    for (i=0; i<list_class_elem.length; i++){
+        if (list_class_elem[i].style.display === "none") {
+            list_class_elem[i].style.display = "block";
+          } else {
+            list_class_elem[i].style.display = "none";
+          }
+    }
+}
+function show_elem(class_name) {
+  var list_class_elem = document.getElementsByClassName(class_name);
+    var i;
+    for (i=0; i<list_class_elem.length; i++){
+        if (list_class_elem[i].style.display === "none") {
+            list_class_elem[i].style.display = "block";
+          } else {
+            list_class_elem[i].style.display = "none";
+          }
+    }
+}
+
 function fadeClass(class_name){
     var list_class_elem = document.getElementsByClassName(class_name);
     var i;
@@ -77,9 +100,9 @@ function expandWorkObj(obj_id){
 
 function getWritingObj(){
 // document.getElementById("codepic").innerHTML = "My First JavaScript";
-    w3.hide(".codeobj");
-    w3.hide(".altrealobj");
-    w3.show(".writingobj");
+    hide_elem("codeobj");
+    hide_elem("altrealobj");
+    hide_elem("writingobj");
     //document.getElementById("cvpic").style.opacity = "0.5"; 
     document.getElementById("codepic").style.opacity = "0.5";
     fadeClass("altreality");
@@ -88,9 +111,9 @@ function getWritingObj(){
 
 function getAltRealObj(){
       // document.getElementById("codepic").innerHTML = "My First JavaScript";
-      w3.hide(".codeobj");
-      w3.hide(".writingobj");
-      w3.show(".altrealobj");
+      hide_elem("codeobj");
+      hide_elem("writingobj");
+      hide_elem("altrealobj");
       //document.getElementById("cvpic").style.opacity = "0.5"; 
       document.getElementById("codepic").style.opacity = "0.5";
       fadeClass("writing");
@@ -99,9 +122,9 @@ function getAltRealObj(){
 
 function getCodeObj(){
       // document.getElementById("codepic").innerHTML = "My First JavaScript";
-      w3.hide(".altrealobj");
-      w3.hide(".writingobj");
-      w3.show(".codeobj");
+      hide_elem("altrealobj");
+      hide_elem("writingobj");
+      hide_elem("codeobj");
       //document.getElementById("cvpic").style.opacity = "0.5"; 
       fadeClass("writing");
     fadeClass("altreality");
