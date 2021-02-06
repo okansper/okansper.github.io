@@ -136,6 +136,15 @@ function getCodeObj(){
       document.getElementById("codepic").style.opacity = "1";  
 }
 
+shortDescriptMap.set('pigeons', '');
+longDescriptMap.set('pigeons', '');
+picDescriptMap.set('pigeons', 
+                   '<img src="index_files/pigeons1.png" id="pigeons2pic" style="position:fixed; left:25px; top:25px;width:460px;height:auto;">'+
+        '<img src="index_files/pigeons4.png" style="position:fixed; left:25px; top:300px;width:460px;height:auto;">'+
+        '<img src="index_files/pigeons3.png" style="position:fixed; left:500px; top:25px;width:460px;height:auto;">'+
+                  '<img src="index_files/pigeons2.png" id="pigeons1pic" style="position:fixed; left:500px; top:300px;width:460px;height:auto;">');
+descriptformatMap.set('pigeons', 'position:fixed; left:510px; top:350px; background-color: #gray; z-index:10; padding-right: 25px');
+
 
 shortDescriptMap.set('frisatsun', 'December 2017 <br> <i>Fri/Sat/Sun (Material Girl in a 3D world)</i>, a VR Play<br><div class="workdescript"><img src="index_files/fri.png" id="fripic" style="float:left;padding-right:5px;width:150px;height:100px;"> An interactive, immersive narrative piece created for Brown University\'s <a class="mylink" href="http://writing3d.xyz/#Cave%20Writing">CAVE VR space</a>. A study of mood and atmosphere, intimate places and interior dialogues through sound, language, and image.  <button type="button" onclick=\'expandWorkObj("frisatsun", "fripic")\'>SEE MORE...</button></div>');
 longDescriptMap.set('frisatsun', 'December 2017. <i>Fri/Sat/Sun (Material Girl in a 3D world)</i>, a VR Play<br><br>An interactive, immersive narrative piece created for Brown University\'s <a class="mylink" href="http://writing3d.xyz/#Cave%20Writing">CAVE VR space</a>. A study of mood and atmosphere, intimate places and interior dialogues through sound, language, and image. <br> <br> The ways in which texts such as music, movies, material objects, and critical theory mold experience are interrogated over the course of a fun weekend! The girls(?) in Fri/Sat/Sun both seek to process their lives through this web of texts/media, and struggle with ideas of selfhood and emotional “reality” in the face of this mediation. Here, the material takes center stage; differences between the “characters” and the “scenery” are elided, and dialogue, in a form reminiscent of the language of digital communication, is “texted” by both people and their props. The piece tries to find a form of theater commensurate to digital language and virtual experience. In taking seriously and taking pleasure in things, Fri/Sat/Sun is also interested in questioning the idea of human selfhood as independent from the materials and media that surround us.');
