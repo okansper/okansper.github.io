@@ -10,11 +10,13 @@
   body { 
     background-color: #cccccc;
     background-image: url('index_files/linen1.jpg');
+    /*background-image: linear-gradient(to bottom right, #fcfcfc, #b8b4b5);*/
+
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
     font-family: helvetica;
-/*    font-size: 15px;*/
+    font-size: 15px;
     }
 
   .banner{
@@ -22,7 +24,7 @@
     z-index:10
   }
 
-  h1 {color: #5aa4ed;}
+  h1 {color: black;}
   p {color: black;}
   button {background-color: Transparent; background-repeat:no-repeat; border: none;
     cursor:pointer; overflow: hidden; outline:none;}
@@ -72,29 +74,22 @@
     #coinpic{
     position:absolute;
     width:auto;
-    height:80px;
-    left:240px;
-    top:490px;
-        opacity:80%;
+    height:50px;
+    left:70px;
+    top:600px;
+        opacity:90%;
   }
 
 
     #blobpic{
         position:absolute;
         width:80px;
-        height:90px;
+        height:auto;
         left:250px;
         top:320px;
+        z-index: -50;
       }
 
-  #cvpic{
-    position:absolute;
-    width:110px;
-    height:100px;
-    left:20px;
-    top:430px;
-  }
-    
   #portrait {
       position:fixed;
     left:70%;
@@ -195,7 +190,7 @@
   }
 
   .mylink{
-    color: #5aa4ed;
+    color: black;
   } 
     
 </style> 
@@ -205,11 +200,11 @@
         <img id="lee_aim" src="index_files/definite_chief_aim.jpg">
 
   <div class="banner">
-    <img id="fountainpic" onclick="show_id('fountainpic', 'lee_aim')" src="index_files/goals_blur.png">
-    <img id="blobpic" onclick="show_id('blobpic', 'canvas')" src="index_files/blob.png">
+      <img id="fountainpic" onclick="show_id('fountainpic', 'lee_aim')" src="index_files/goals_blur.png">
+      <img id="blobpic" onclick="show_id('blobpic', 'canvas')" src="index_files/leaves.jpg">
       <img id="nymphlogo" src="index_files/blur_edges.png">
-      <img id="cloverpic" src="index_files/shamrock.png">
-      <img onclick="show_id('coinpic', 'portrait')" id="coinpic" src="index_files/euro.png">
+      <img id="cloverpic" src="index_files/fossil.png">
+      <img onclick="show_id('coinpic', 'portrait')" id="coinpic" src="index_files/infinity.png">
       
     
      <h1 id="grad"><i>Olivia Kan-Sperling</i></h1>
@@ -218,7 +213,6 @@
     <br>oliviakansperling <span ><img src='index_files/at.png' style='width:15px;height:15px'></span> gmail.com</p>
 
     Filter By:
-<!--    <div> <a href="wavylines.html"><img id="cvpic" src="index_files/cv.png"></a></div>-->
     <div class= "writing"> 
       <button type="button" onclick="getWritingObj()"><img id="writingpic" src="index_files/writing.png"></button>
       <div id="journalism"> journalism </div> <div id='criticism'>criticism</div><br></div>
@@ -311,7 +305,7 @@
     </div>
      <div class="workobj writingobj">
       September 2017 <br>
-         <i>The College Hill Independent</i>: <a class='mylink' href="https://www.theindy.org/1200">"Bleach"</a> <br><br> East Asian girls go blonde. Since writing this piece, I've dyed my hair, and become more happy and beautiful. <br><br>
+         <i>The College Hill Independent</i>: <a class='mylink' href="https://www.theindy.org/1200">"Bleach"</a> <br><br> East Asian girls go blonde. Since writing this piece, I've dyed my hair. <br><br>
     </div>
       
       <div class="workobj altrealobj" id="mermaid">
