@@ -10,7 +10,7 @@ $(document).ready(() => {
 var FADEDOPACITY = '0.05';
 
 let banner;
-banner = $('#fountainpic');
+banner = $('#infinitypic');
 
 /*function hide_elem(class_name) {
   var list_class_elem = document.getElementsByClassName(class_name);
