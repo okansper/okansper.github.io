@@ -338,11 +338,13 @@ function loadPageGraphics(){
         case 71:
             FLASHBACK=true;
             playflashback();
-            background_image("pngfabricwindow.png")
+            rightarrow.onclick="";
+            background_image("pngfabricwindow.png");
             setTimeout(function(){
-            rightPage.src=PAGESTRINGPREFIX+PAGENUMBER+".png";
+                rightPage.src=PAGESTRINGPREFIX+PAGENUMBER+".png";
                 rug_background();
-            musicnotes_img.style.display="block";
+                musicnotes_img.style.display="block";
+                rightarrow.onclick="click_next_page()";
         }, 6000);
             
             break;
@@ -433,9 +435,9 @@ $(document).ready(() => {
         rightPage.classList.add("toppage");
         populatePages(PAGENUMBER-1);
     }
-    if (SPREADTYPE === 'ONEPAGE'){
-        //fill in at some point - optimize for small screen
-    }
+//    if (SPREADTYPE === 'ONEPAGE'){
+//        //fill in at some point - optimize for small screen
+//    }
     
    
 });
@@ -480,7 +482,7 @@ function popup(popuptype){
     if (popuptype === "nixon"){
         modalparagraph.innerHTML="From Henry Kissinger's <i>The White House Years</i>, chapter: Encounters at the Pierre. I didn't actually read this book. But I read this quote in https://www.dmagazine.com/frontburner/2014/03/the-barrett-brown-review-of-arts-and-letters-and-jail-enter-the-kissinger/."
     }else if (popuptype === "lana"){
-        modalparagraph.innerHTML='<iframe width="560" height="315" src="https://www.youtube.com/embed/sxDdEPED0h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        //music video
     }else if (popuptype === "awfulthings"){
         modalparagraph.innerHTML='https://www.youtube.com/watch?v=zOujzvtwZ6M';
     }else if(popuptype === "cheerleader"){
@@ -550,10 +552,7 @@ function get_pageAsset_src(pagenum){
     }else if (pagenum == 71){
         return ('assets/pathwatergray.gif');
     }
-   /* else if (pagenum == FINALPAGENUM+1){
-        return "assets/snowflakesgray.png";
 
-    }*/
     return (PAGESTRINGPREFIX+pagenum+'.png');
     
     
