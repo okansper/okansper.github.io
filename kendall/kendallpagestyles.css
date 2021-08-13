@@ -1,0 +1,140 @@
+body { 
+      
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size:cover;
+      background-size:cover;
+    }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#title{
+    display:block; position:absolute; top:3%;left:40%;width:170px;height:80px;
+    z-index:10;
+}
+
+.arrow{
+    position:absolute;
+    width:50px;
+    z-index: 12;
+    bottom: 0%;
+}
+#arrowleft{left: 26%;}
+#arrowright{right: 40%;}
+
+.border{
+    position:fixed;
+    height:auto; 
+    z-index:12;
+}
+#borderleft{
+    left:-1%;
+    bottom:-4%;
+    width:300px;
+}
+#borderright{
+    right:0%;
+    top:0%;
+    width:100px;
+    
+}
+#bordertop{
+    left:3%;
+    top:0%;
+    width:100px;
+    rotate: -90deg;
+    
+}
+#borderleftbaroque{
+    left:-1%;
+    bottom:-2%;
+    width:200px;
+    rotate: 180deg;
+}
+#borderrightbaroque{
+    right:-1%;
+    top:-2%;
+    width:200px;
+
+}
+#pagecontainer{
+    width:940px;
+    height:auto;
+    position:absolute;
+    z-index:5;
+    top:8%;
+    left:8%;
+}
+#pagecontainer1{
+    width:90%;
+    height:auto;
+    z-index:5;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.page{
+    width:41%;
+    height:auto; 
+    position:relative;
+    border: 0.5px solid #000;
+    opacity: 50%
+}
+
+
+#pageA{
+    position:absolute;
+    left:-1%;
+    top: 1%;
+    z-index:-2;
+}
+#pageB{
+    position:absolute;
+    left:-2%;
+    top: -1%;
+    z-index:-3;
+}
+#pageC{
+    position:absolute;
+    right:16%;
+    top: 1%;
+    z-index:-2;
+}
+#pageD{
+    position:absolute;
+    right:17%;
+    top: -1%;
+    z-index:-3;
+}
+#pageE{
+    position:absolute;
+    left:1%;
+    top: 0%;
+    z-index:-4;
+}
+#pageF{
+    position:absolute;
+    right:15%;
+    top: 0%;
+    z-index:-4;
+}
+
+.toppage{
+    opacity: 100%;
+}
+.LEFTPAGESPREAD{}
+.RIGHTPAGESPREAD{}
+.ONEPAGE{}
+
+.pagecloud{
+    border: 0.5px solid #000;
+    z-index:-5;
+    width:260px;
+    height:auto;
+    opacity:40%;
+}
