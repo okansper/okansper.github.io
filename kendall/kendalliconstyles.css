@@ -2,7 +2,7 @@
     z-index: 15;
     width:100%;
     height:auto;
-    display:block;
+    display:none;
 }
 
 .pulse{
@@ -92,7 +92,7 @@
     top:30%;
     border: 0.5px solid #000;
     opacity: 100%;
-    rotate:15deg;
+    -webkit-transform: rotate(15deg);
     z-index:-1;
     display: none;
 }
@@ -109,7 +109,7 @@
 #kendallcard{
     left:10%;
     z-index: 4;
-    rotate: -23deg;
+    -webkit-transform: rotate(-23deg);
     top: 30%
 }
 #grimescard{
@@ -120,13 +120,13 @@
 #guscard{
     left:40%;
     z-index: 3;
-    rotate: 18deg;
+    -webkit-transform: rotate(18deg);
     top: 30%
 }
 #sarahcard{
     left:55%;
     z-index: 1;
-    rotate: 10deg;
+    -webkit-transform: rotate(10deg);
     top: 28%
 }
 
@@ -151,7 +151,7 @@
 }
 #mapbackground{
     width: 600px;
-    rotate: 60deg;
+    -webkit-transform: rotate(60deg);
     top: 12%;
     right: 30%;
     z-index: 7;
@@ -172,7 +172,7 @@
     width: 500px;
     height:500px;
     top: 31%;
-    rotate: 20deg;
+    -webkit-transform: rotate(20deg);
     left: 10%;
     z-index:8;
 }

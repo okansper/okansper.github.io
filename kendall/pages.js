@@ -163,7 +163,7 @@ function loadPageGraphics(){
         case 18:
              //DREAM
              background_image("bigrug.png");
-             popup("lana");
+             //popup("lana");
              break;
         case 19:
              background_image("bigrug.png");

@@ -31,29 +31,13 @@ body {
     height:auto; 
     z-index:12;
 }
-#borderleft{
-    left:-1%;
-    bottom:-4%;
-    width:300px;
-}
-#borderright{
-    right:0%;
-    top:0%;
-    width:100px;
-    
-}
-#bordertop{
-    left:3%;
-    top:0%;
-    width:100px;
-    rotate: -90deg;
-    
-}
+
+
 #borderleftbaroque{
     left:-1%;
     bottom:-2%;
     width:200px;
-    rotate: 180deg;
+    -webkit-transform: rotate(180deg);
 }
 #borderrightbaroque{
     right:-1%;
@@ -68,14 +52,6 @@ body {
     z-index:5;
     top:8%;
     left:8%;
-}
-#pagecontainer1{
-    width:90%;
-    height:auto;
-    z-index:5;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3%;
 }
 
 .page{
