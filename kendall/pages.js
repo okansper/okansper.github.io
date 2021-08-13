@@ -338,13 +338,13 @@ function loadPageGraphics(){
         case 71:
             FLASHBACK=true;
             playflashback();
-            rightarrow.onclick="";
+            rightarrow.style.display="none";
             background_image("pngfabricwindow.png");
             setTimeout(function(){
                 rightPage.src=PAGESTRINGPREFIX+PAGENUMBER+".png";
                 rug_background();
                 musicnotes_img.style.display="block";
-                rightarrow.onclick="click_next_page()";
+                rightarrow.style.display="block";
         }, 6000);
             
             break;
