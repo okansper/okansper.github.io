@@ -13,8 +13,18 @@ body {
 }
 
 #title{
-    display:block; position:absolute; top:3%;left:40%;width:170px;height:80px;
+    display:block; 
+    position:absolute; 
+    top:3%;left:40%;
+    width:200px;height:100px;
     z-index:10;
+}
+
+.clickable{
+    cursor: pointer;
+}
+.mylink{
+    color:deeppink;
 }
 
 .arrow{
@@ -36,17 +46,18 @@ body {
 #borderleftbaroque{
     left:-1%;
     bottom:-2%;
-    width:200px;
+    width:220px;
     -webkit-transform: rotate(180deg);
 }
 #borderrightbaroque{
     right:-1%;
     top:-2%;
-    width:200px;
+    width:220px;
 
 }
+
 #pagecontainer{
-    width:940px;
+    width:1200px;
     height:auto;
     position:absolute;
     z-index:5;

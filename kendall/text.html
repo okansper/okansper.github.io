@@ -14,9 +14,9 @@
     <img id="rug" src="assets/rug.png" style="position: fixed; z-index:-30;top:10%; left:10%; width: 80%;">
     <div id="pagecontainer">
         <img class="page" id="pageleft" src="">
-        <img id="arrowleft" class="arrow" src="assets/arrow_left.png" onclick="click_prev_page()">
+        <img id="arrowleft" class="arrow clickable" src="assets/arrow_left.png" onclick="click_prev_page()">
         <img class="page" id="pageright" src="">
-        <img id="arrowright" class="arrow" src="assets/arrow_right.png" onclick="click_next_page()">
+        <img id="arrowright" class="arrow clickable" src="assets/arrow_right.png" onclick="click_next_page()">
 
 
         <img  id="borderrightbaroque" class="border" src="assets/leafbordergray.png">
@@ -37,24 +37,19 @@
         <img class="map" id="foxpoint_cloud" src="assets/foxpoint_cloudgray.png">
         
         <img id="depressioncloud" src="assets/depression_cloud.png">
+        <img id="alphacloth" src="assets/alphapattern_cloth.png">
 
-        <img id="facedowncard" src="assets/rainbowlines.png">
+        <img id="facedowncard" class="clickable" src="assets/rainbowlines.png">
         
         <img class="page background_stack_page" id="pageA" src="">
         <img class="page background_stack_page" id="pageB" src="">
         <img class="page background_stack_page" id="pageC" src="">
         <img class="page background_stack_page" id="pageD" src="">
-        <!--<img class="page background_stack_page" id="pageE" src="">
-        <img class="page background_stack_page" id="pageF" src="">-->
         
-        <div id="myModal" class="modal">
-
-          <!-- Modal content -->
-            
+        <div id="myModal" class="modal">            
           <div id="modal-content">
-            <span class="close">&times;</span>
+            <span class="close clickable">&times;</span>
             <p id="modal-paragraph"></p>
-              
           </div>
 
         </div>
@@ -62,14 +57,14 @@
     
     <div id="iconbar">
         <div class="wrapper" id="eyewrapper">
-            <img class="icons" id="eye" src="assets/eye.png" onclick="show_map()"></div>
+            <img class="icons clickable" id="eye" src="assets/eye.png" onclick="show_map()"></div>
         <div class="wrapper" id="coinwrapper">
-            <img class="icons" id="coin" src="assets/doublecoingray.png" onclick="show_character_cards()"></div>
+            <img class="icons clickable" id="coin" src="assets/doublecoingray.png" onclick="show_character_cards()"></div>
         <div class="wrapper" id="sparklewrapper">
             <img class="icons" id="sparkle" src="assets/sparklegray.png"></div>
         
         <div class="wrapper" id="infinitywrapper">
-            <img class="icons" id="infinity" src="assets/infinity.png"></div>
+            <img class="icons clickable" id="infinity" src="assets/infinity.png"></div>
         <div class="wrapper" id="catwrapper">
             <img class="icons" id="cat" src="assets/cat.png"></div>
 

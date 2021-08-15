@@ -61,10 +61,12 @@ var SCIENCEPARK_UNLOCK = false;
 var FOXPOINT_UNLOCK = false;
 
 function loadPageGraphics(){
+    console.log(PAGENUMBER);
       
     switch (PAGENUMBER){
         case 1:
             leftarrow.style.display="none";
+            break;
         case 2:
             leftarrow.style.display="block";
             rug_background();
@@ -170,10 +172,10 @@ function loadPageGraphics(){
              break;
         case 20:
              rug_background();
-            TEXTRON_UNLOCK = true;
-            NEW_MAP = true;
              break;
         case 21:
+             TEXTRON_UNLOCK = true;
+             NEW_MAP = true;
              rug_background();
              break;
         case 22:
@@ -216,6 +218,9 @@ function loadPageGraphics(){
              NIGHTTIME = true;
             FLASHBACK = false;
              break;
+        case 32:
+            FLASHBACK=false;
+            break;
         case 33:
             FLASHBACK = true;
             playflashback();
@@ -234,7 +239,6 @@ function loadPageGraphics(){
         case 37:
             NIGHTTIME = true;
             background_image("bigrug.png");
-            //TODO add snowflakes?
             depressioncloud_gone();
             break;
         case 38:
@@ -284,8 +288,6 @@ function loadPageGraphics(){
             break;
         case 52:
             background_image(IMGURL_SIDEWALK);
-            SCIENCEPARK_UNLOCK = true;
-            NEW_MAP = true;
             break;
         case 53:
             background_image("pngfabricombre.png");
@@ -300,11 +302,12 @@ function loadPageGraphics(){
             break;
         case 60:
             background_image("pngfabricombre.png");
+            document.getElementById("alphacloth").style.display="none"; 
             break;
         case 61:
             background_image(IMGURL_SIDEWALK);
             popup("twilight");
-            document.getElementById("depressioncloud").style.display="block"; document.getElementById("depressioncloud").src="assets/alphapattern_cloth.png";
+            document.getElementById("alphacloth").style.display="block"; 
             break;
         case 63:
             NIGHTTIME = false;
@@ -321,7 +324,7 @@ function loadPageGraphics(){
         case 66:
             NIGHTTIME=false;
             background_image("sparkle.png");
-            depressioncloud_gone();
+            document.getElementById("alphacloth").style.display="none"; 
             break;
         case 68:
             background_image("sparkle.png");
@@ -354,9 +357,12 @@ function loadPageGraphics(){
             break;
         case 73:
             rightarrow.style.display="block";
+            FLASHBACK=true;
             break;
         case 74:
+            FLASHBACK=false;
             rightarrow.style.display="none";
+            popup("acknowledgments");
             break;
 
         default:
@@ -364,8 +370,6 @@ function loadPageGraphics(){
     }
     
     if (FLASHBACK){
-        
-        
         gray_icon(eye, "eyegray.gif");
         gray_icon(coin, "coin.gif");
         gray_icon(sparkle, "sparklegray.png");
@@ -461,7 +465,6 @@ function show_character_cards(){
     } 
 }
 
-
 function show_map(){
     if (SHOWMAP){ //this unshows the map
         hide_class("map");
@@ -480,7 +483,7 @@ function show_map(){
 function popup(popuptype){
     POPUP=true;
     if (popuptype === "nixon"){
-        modalparagraph.innerHTML="From Henry Kissinger's <i>The White House Years</i>, chapter: Encounters at the Pierre. I didn't actually read this book. But I read this quote in https://www.dmagazine.com/frontburner/2014/03/the-barrett-brown-review-of-arts-and-letters-and-jail-enter-the-kissinger/."
+        modalparagraph.innerHTML="From Henry Kissinger's <i>The White House Years</i>, chapter: Encounters at the Pierre Hotel. I didn't actually read this book... But I read this quote in journalist/'hacker-whistleblower'/'Anonymous'/satirist Barrett Brown's writing: https://www.dmagazine.com/frontburner/2014/03/the-barrett-brown-review-of-arts-and-letters-and-jail-enter-the-kissinger/."
     }else if (popuptype === "lana"){
         //music video
     }else if (popuptype === "awfulthings"){
@@ -495,27 +498,22 @@ function popup(popuptype){
         modalparagraph.innerHTML='<img src="assets/twilight.png">';
     }else if (popuptype === 'providence'){
         modalparagraph.innerHTML='https://www.youtube.com/watch?v=tCWkfetk6BM&ab_channel=WICCAPHASESPRINGSETERNAL';
+    }else if (popuptype === 'acknowledgments'){
+        modalparagraph.innerHTML='The photo of blurry trees at night (Benefit St) is by <a class="mylink" href="https://eveoshea.com/">Eve O’Shea</a>, who also read an early draft. The leaf border I photoshopped out of a 13th century illuminated manuscript, and the coin is Ancient Roman (Agrippina & Nero): <a class="mylink" href="http://www.romancoins.info/Wives1.html">http://www.romancoins.info/Wives1.html</a>. The other icons and rug are random stock images; the sound effects are from YouTube. The pink knot is from a WikiHow article on How To Tie Celtic Knots. The gif of sparkles on water is an image someone uploaded to Reddit about their trip to Malta. Photos of Kendall, Grimes, and Sarah are IG screenshots; Lil Peep is a screenshot of the Awful Things music vid. <br><br> The other assets are from my camera roll and desktop. <br> <br>Thanks to Lucia Kan-Sperling, <a class="mylink" href="https://libbymarrs.net/">Libby Mars</a>, and <a href="http://libyhays.net/">Liby Hays</a> for reading, testing, and generally informing/inspiring the basic sensibility of this project <3.';
     }
     
     infinity.onclick = function() {
       modal.style.display = "block";
+      gray_icon(infinity, "infinity.png");
     }
 
     // When the user clicks on <span> (x), close the modal
     modal_span.onclick = function() {
         modal.style.display = "none";
-        gray_icon(infinity, "infinity.png");
         POPUP=false;
+        modalparagraph.innerHTML='No link';
     }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-          gray_icon(infinity, "infinity.png");
-          POPUP=false;
-      }
-    } 
 }
 function rug_background(){
     rug.style.display="block";
@@ -544,23 +542,18 @@ function gray_icon(elem, elem_name){
     }
 }
 
-//ABSTRACT FUNCS
 function get_pageAsset_src(pagenum){
     
     if (pagenum < 10){
         return (PAGESTRINGPREFIX+"0"+pagenum+'.png');
-    }else if (pagenum == 71){
-        return ('assets/pathwatergray.gif');
-    }
+    }else if (pagenum == 71){return ('assets/pathwatergray.gif');}
 
     return (PAGESTRINGPREFIX+pagenum+'.png');
-    
-    
 }
 
 function populatePages(pagenum){
     leftPage.src = get_pageAsset_src(pagenum);
-    rightPage.src =get_pageAsset_src(pagenum+1);
+      rightPage.src =get_pageAsset_src(pagenum+1);
     
     if((pagenum-2) > 0){
          pageB.style.display = "block"; 
@@ -573,7 +566,6 @@ function populatePages(pagenum){
         pageA.src =get_pageAsset_src(pagenum-1);
     }else{
          pageA.style.display = "none"; 
-        //TODO remove arrow
     }
     if((pagenum+3) < FINALPAGENUM){
         pageD.style.display = "block"; 
@@ -592,8 +584,6 @@ function populatePages(pagenum){
 
 function click_next_page(){
     PAGENUMBER+=1;
-    
-    //TODO: deal with edge case of first 3 pages
     loadPageGraphics();
    
     if (SPREADTYPE === 'LEFTPAGESPREAD'){
@@ -651,20 +641,3 @@ function hide_class(class_name) {
     }
 }
  
-function unfade(class_name) {
-    var list_class_elem = document.getElementsByClassName(class_name);
-    var op = 0.1;  // initial opacity
-    var timer = setInterval(function () {
-    if (op >= 1){
-        clearInterval(timer);
-    }
-    var i;
-    for (i=0; i<list_class_elem.length; i++){
-        var element = list_class_elem[i];
-        element.style.display = 'block';
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
-    }
-    }, 10); 
-}
