@@ -425,8 +425,7 @@ function loadPageGraphics(){
     }
 }
 
-$(document).ready(() => {
-   
+window.onload = function() {   
     //NECESSARY FOR DEVELOPMENT ONLY
     loadPageGraphics();
     if ((PAGENUMBER % 2) == 0){
@@ -444,7 +443,7 @@ $(document).ready(() => {
 //    }
     
    
-});
+};
                   
 
 function depressioncloud_gone(){

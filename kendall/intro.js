@@ -5,7 +5,8 @@ var audioObj;
 const BEFOREKNOT=9;
 const KNOTANIMATIONLEN=9;
 
-$(document).ready(() => {
+window.onload = function() {
+  
     setTimeout(function(){
         modal.style.display='block';
     }, 1600);
@@ -40,7 +41,7 @@ $(document).ready(() => {
     }, BEFOREKNOT*1000);
     
     
-});
+};
 
 var OUTRO = true;
 function arrow_click(){
