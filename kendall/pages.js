@@ -510,7 +510,7 @@ function popup(popuptype){
     modal_span.onclick = function() {
         modal.style.display = "none";
         POPUP=false;
-        modalparagraph.innerHTML='No link';
+        modalparagraph.innerHTML='NO LINK';
     }
 
 }
