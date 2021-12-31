@@ -112,9 +112,17 @@
         left:50%;
         display:none;
     }
+    .kaleidoscope {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+}
+    
 </style>
     
 <body>
+    
     
     <img class="kendallpic" src="assets/intro/alien%20kendall.png" style="width:35%; height:auto;">
     <img class="kendallpic" src="assets/intro/blacksuit.png" style="width:15%; height:auto;">
@@ -156,4 +164,12 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
    <script src="intro.js"></script>
+    <script src="kaleidoscope.min.js"></script>
+    <script>
+        window.onload = function() {
+          new Kaleidoscope({
+            selector: '#kaleidoscope',
+          });
+        };
+    </script>
 </html>
