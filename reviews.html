@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!-- specifying language is important for screen readers and search engines -->
+<meta name="keywords" content="Olivia Kan-Sperling" charset="utf-8">
+
+<head>
+  <title>Olivia Kan-Sperling</title>
+</head>
+
+<style>
+  body { 
+    background-color: #cccccc;
+/*    background-image: url('index_files/linen1.jpg');*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: helvetica;
+    font-size: 15px;
+    }
+
+    .excerpt{
+        padding-left: 100px;
+    }
+    .mylink{
+    color: darkslategray;
+  } 
+  .banner{
+    position:fixed;
+    z-index:10
+  }
+
+  h1 {color: black;}
+  p {color: black;}
+  button {background-color: Transparent; background-repeat:no-repeat; border: none;
+    cursor:pointer; overflow: hidden; outline:none;}
+
+    .circleimg{
+          float: left; 
+      margin-left: 125px;
+      margin-top: 20px;
+      border-radius: 100%;
+      overflow: hidden;
+      background-color: silver;
+        z-index: -1;
+    }
+    .circle-container {
+        position: absolute;
+        left:12%;
+        top:5%;
+        width: 40em;
+        height: 40em;
+        padding: 1em;
+        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+        border: dashed 1px;
+        border-radius: 50%;
+        margin: 3em auto 0;
+    }
+    .circle-container a {
+        display: block;
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 6em; height: 6em;
+        margin: -3em;
+    }
+    .circle-container img { display: block; width: 100%; }
+    .deg0 { transform: translate(20em); } /* 12em = half the width of the wrapper */
+    .deg45 { transform: rotate(45deg) translate(20em) rotate(-45deg); }
+    .deg135 { transform: rotate(135deg) translate(20em) rotate(-135deg); }
+    .deg180 { transform: translate(-20em); }
+    .deg225 { transform: rotate(225deg) translate(20em) rotate(-225deg); }
+    .deg315 { transform: rotate(315deg) translate(20em) rotate(-315deg); }
+    
+    .review{
+        padding-bottom: 10px;
+    }
+    
+    
+.grayscale{
+        filter: grayscale(0%);
+    opacity:85%;
+    }
+ 
+</style> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<body>
+<b>REVIEWS</b><br><br>
+    <img id="background" src="kendall/assets/snowflakes.png" style="position: fixed; z-index:-2;top:50%; left:45%; width: 70%;">
+    <br>
+    <div class="review">
+        9/17/21: Liby Hays, <i>Geniacs</i> <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/17/the-reviews-review-these-were-the-angels/'>https://www.theparisreview.org/blog/2021/09/17/the-reviews-review-these-were-the-angels/</a><br>
+    </div>
+    <div class="review">
+        9/23/21: Jeffrow Skoblow, <i>In a Trance: On Paleo Art</i> and Lisa Yuskavage, <i>New Paintings</i>  <a class='mylink' href='www.theparisreview.org/blog/2021/09/23/the-reviews-review-reproducing-bodies/'>www.theparisreview.org/blog/2021/09/23/the-reviews-review-reproducing-bodies/</a><br> 
+    </div>
+    <div class="review">
+        9/30/21: Jon Bois, <i>17776: The Future of Football</i> <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/'>https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/</a><br> 
+      </div>
+    <div class="review">
+        10/14/21: The Consumer Aesthetics Research Institute  <a class='mylink' href='https://www.theparisreview.org/blog/2021/10/14/the-reviews-review-nocturne-vibes/'>https://www.theparisreview.org/blog/2021/10/14/the-reviews-review-nocturne-vibes/</a><br> 
+    </div>
+    <div class="review">
+        10/21/21: Curtis Eggleston, <i>Hollow Nacelle</i>  <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/'>https://www.theparisreview.org/blog/2021/10/21/the-reviews-review-eternal-present/</a><br> 
+    </div>
+    <div class="review">
+        12/17/21: D.A Miller, <i>Jane Austen, or the Secret of Style</i> and Stanley Cavell, <i>Pursuits of Happiness</i> and Yukio Mishima, <i>Star</i> and Jane Unrue, <i>Life of a Star</i> <a class='mylink' href='https://www.theparisreview.org/blog/2021/12/17/our-staffs-favorite-books-of-2021/'>https://www.theparisreview.org/blog/2021/12/17/our-staffs-favorite-books-of-2021/</a>
+    </div>
+    <div class="review">
+        1/7/22: Jaimy Gordon, <i>Circumspections from an Equestrian Statue</i> <a class='mylink' href=' www.theparisreview.org/blog/2022/01/07/the-reviews-review-wives-and-daughters-love-and-light/'> www.theparisreview.org/blog/2022/01/07/the-reviews-review-wives-and-daughters-love-and-light/</a>
+      </div>
+    <div class="review">
+        1/20/22: Hannah Regel, <i>Oliver Reed</i> <a class='mylink' href='https://www.theparisreview.org/blog/2022/01/20/the-reviews-review-back-to-the-essence/'>https://www.theparisreview.org/blog/2022/01/20/the-reviews-review-back-to-the-essence/</a><br> 
+      </div>
+    <div class="review">
+        2/4/22: New York City Ballet / Christopher Wheeldon, <i>Danse à Grande Vitesse</i> <a class='mylink' href='www.theparisreview.org/blog/2022/02/04/the-reviews-review-out-of-time/ '>www.theparisreview.org/blog/2022/02/04/the-reviews-review-out-of-time/</a><br> 
+      </div>
+    <div class="review">
+        3/3/22: Other Internet <a class='mylink' href='www.theparisreview.org/blog/2022/03/03/the-reviews-review-vesna/'>www.theparisreview.org/blog/2022/03/03/the-reviews-review-vesna/</a><br> 
+      </div> 
+</body>
+    
+
+   
+</html>

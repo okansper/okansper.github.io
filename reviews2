@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!-- specifying language is important for screen readers and search engines -->
+<meta name="keywords" content="Olivia Kan-Sperling" charset="utf-8">
+
+<head>
+  <title>Olivia Kan-Sperling</title>
+</head>
+
+<style>
+  body { 
+    background-color: #cccccc;
+/*    background-image: url('index_files/linen1.jpg');*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: helvetica;
+    font-size: 15px;
+    }
+
+    .excerpt{
+        padding-left: 100px;
+    }
+    .mylink{
+    color: darkslategray;
+  } 
+  .banner{
+    position:fixed;
+    z-index:10
+  }
+
+  h1 {color: black;}
+  p {color: black;}
+  button {background-color: Transparent; background-repeat:no-repeat; border: none;
+    cursor:pointer; overflow: hidden; outline:none;}
+
+    .circleimg{
+          float: left; 
+      margin-left: 125px;
+      margin-top: 20px;
+      border-radius: 100%;
+      overflow: hidden;
+      background-color: silver;
+        z-index: -1;
+    }
+    .circle-container {
+        position: absolute;
+        left:12%;
+        top:5%;
+        width: 40em;
+        height: 40em;
+        padding: 1em;
+        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+        border: dashed 1px;
+        border-radius: 50%;
+        margin: 3em auto 0;
+    }
+    .circle-container a {
+        display: block;
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 6em; height: 6em;
+        margin: -3em;
+    }
+    .circle-container img { display: block; width: 100%; }
+    .deg0 { transform: translate(20em); } /* 12em = half the width of the wrapper */
+    .deg45 { transform: rotate(45deg) translate(20em) rotate(-45deg); }
+    .deg135 { transform: rotate(135deg) translate(20em) rotate(-135deg); }
+    .deg180 { transform: translate(-20em); }
+    .deg225 { transform: rotate(225deg) translate(20em) rotate(-225deg); }
+    .deg315 { transform: rotate(315deg) translate(20em) rotate(-315deg); }
+    
+    
+    
+.grayscale{
+        filter: grayscale(0%);
+    opacity:85%;
+    }
+ 
+</style> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<body>
+<b>REVIEWS</b><br><br>
+    <div>
+        9/17/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/17/the-reviews-review-these-were-the-angels/'>"https://www.theparisreview.org/blog/2021/09/17/the-reviews-review-these-were-the-angels/"</a><br>
+
+Liby Hays’s <i>Geniacs!</i>, a graphic novel out this summer from the art book publisher Landfill Editions, takes place at a hackathon—truly inspired material for slapstick comedy, body horror, and philosophical reflection alike. This tech competition’s goal? Invent a new life-form. “People always think my ideas are dumb … but they’re purposefully so! Their failure is coded within them! It’s like when scientists artificially reanimate the cells of a dead pig’s brain. The brain becomes trapped in an infinite loop reliving the terror of its final moments. But within that narrow terror loop… We might find potential for new forms of thought to arise!” So muses our heroine, a morbidly minded wordsmith undercover as a “po-ent” (poet-entrepreneur). Her (hot, tattooed) slacker partner would rather copy and paste some old code, though, than entertain her inefficiently emo-poetic concepts. Hays’s detailed black-and-white illustrations are as gymnastic, compositionally, as her characters’ dialogue: her panels cut across the page in dizzying fits of polygons and word bubbles that leave us spiral-eyed, minds buzzing, cartoon birds circling our heads. A canny and cryptic meditation on group projects, life, “life,” art, and the cheat code lifestyle only slightly more surreal, though much more fun, than my worst nights of coding. 
+    </div>
+    <br><br><br>
+    <div>
+        9/23/21 <a class='mylink' href='www.theparisreview.org/blog/2021/09/23/the-reviews-review-reproducing-bodies/'>"www.theparisreview.org/blog/2021/09/23/the-reviews-review-reproducing-bodies/"</a><br> 
+
+I thought of Jeffrey Skoblow’s <i>In a Trance: On Paleo Art</i> while looking at Lisa Yuskavage’s “Master Class” (in her show <i>New Paintings</i>, up now at David Zwirner). The painting stages a mythic discovery-of-art(ifice)-as-porn scenario: a bare-breasted hippie chick kneels before her male counterpart; they’re separated by a painting of fire, placed over his crotch. Behind them looms a green canvas suggesting the cave-art shapes of horned bison, with a swirly psychedelic twist. Skoblow’s meditation on cave drawings, in which he reconstructs from decades-old, hastily scrawled notebook entries his visits to twelve Lascaux-type sites, looks long and hard at that which is “not a sign of anything but itself, that is, it means, ‘I mean,’ ‘I have meaning,’ and connects all who recognize it.” Skoblow’s prose is quiet, strangely secretive, where Yuskavage’s monochromes are shamelessly pop-y. But both invite us into “a ritual landscape … a place to return to (if only in the mind), to take an interest in the minds and bodies of (relatively distant) others.” Both are lushly recursive and metareferential in harnessing their respective media to ask after the origins of mark-making and figuration, to illustrate and illuminate “the muck and mire of human being, the terrifying crazy ooze of our psychosexual evolutionary mud bath.” Who were these early humans? What did they see? And what did they do, to the walls and each other, with language—a new space that introduced relations?
+    </div>
+    <br><br><br>
+    <div>
+        9/30/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/'>"https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/"</a><br> 
+  
+
+Four years after its first chapter was published on SB Nation in 2017, Jon Bois’s serialized multimedia novella <i>17776: The Future of Football</i> is still my favorite (and some of the only) “new media” lit online. Told through text interspersed with video and graphics that mix satellite imagery, newspaper clippings, and Telestrated sports-field diagrams, the story follows the sentient space probe Pioneer 9 as it flies over the United States of the future: a land in which no one dies any more, but everyone still loves football. With their newfound immortality, Americans have developed more and more baroque constellations of rules for their favorite game, sending their players on elaborate, millennia-long scavenger hunts across the country. An epic reminiscent of Infinite Jest, it’s a dazzlingly idiosyncratic work of art that is equal parts exercise in speculative game design, history of a dying empire, and fable about the meaning of play, humanity, and technology. But 17776 isn’t just an experiment with form; Bois is a startlingly sensitive writer, and scrolling through his simple, color-coded dialogue feels like looking at the 1967 photo of Earth taken by an astronaut on the Apollo 8 mission: lonely, but awe-inducing
+    </div>
+    
+       <br><br><br>
+    <div>
+        10/14/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/10/14/the-reviews-review-nocturne-vibes/'>"https://www.theparisreview.org/blog/2021/10/14/the-reviews-review-nocturne-vibes/"</a><br> 
+  
+The Consumer Aesthetics Research Institute was introduced to me a couple years ago, when I first learned the word for those muted, rainbow-toned Millennial blobs that stumble through subway ads for app-based services and resonate in the weird bubbles encapsulating the human forms on the cover of the new Sally Rooney novel. Dedicated to “developing a visual lexicon of consumer ephemera from the 1970s to now,” their site archives and sorts images—music video stills, home interiors, magazine illustrations, product photos—into a dizzying number of distinct “aesthetic categories,” which you can filter chronologically, by “first known example,” or by “end of popularity.”
+<br><br>
+There’s the easily recognizable contemporary internet aesthetics: Pinterest Mom, Internet Awesomesauce (nyancat), and HyperBling—a pinker revival of the more golden 2000s-era McBling, which, CARI fastidiously notes, is “largely misattributed as ‘y2k’ on platforms like Instagram.” And then there are slightly older categories in minor keys I didn’t know I knew: Indiecraft (buttons, puppets); Paperback Chic (aka Chobanicore); Gen X Soft Club (think Kate Moss or consumer electronics shot au naturel); or Soft Colonialist Wanderlust, which covers the phonographs and hot air balloons that have traipsed off Neutral Milk Hotel album covers and onto, say, the wallpaper of the redesigned MGM Casino in Springfield, Massachusetts. 
+<br><br>
+The project is not only a rich visual archive, but a categories game, a gleeful exercise in terminological pedantry that reminds us of the shocking fun of language (not to mention consumerism). There is the rare flash of recognition that accompanies matching a term to a thing, the ability to capture and communicate what was previously just it, and the desire to Spread the Word (if only I were able to filter cafés on Yelp by #GlobalVillageCoffeehouse). Ever since I saw my first American Apparel ad, I knew I’d be a lifelong adherent to the Cobra Snake flash photography vibe that CARI calls “Indie Sleaze.” Tonight, consider incorporating https://cari.institute/aesthetics/ into a personality-type party game.
+    </div>
+    
+       <br><br><br>
+    <div>
+        10/21/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/'>"https://www.theparisreview.org/blog/2021/10/21/the-reviews-review-eternal-present/"</a><br> 
+    
+Curtis Eggleston’s <i>Hollow Nacelle</i>, out last month from Expat Press, is, like reality, both weird and not at all so. His characters—bandmates—wanna blow up… Or at least have a girlfriend, or at least make art. This is a southern California dreamworld, only so, so gray. In prose that is wonderfully straight even when it muses and metaphorizes, Eggleston conjures up the terrifying banality of fantasy, the dumbness of miracles, and lays them flat on the page. Major miracles, as per usual: love, art, friendship. Plus—and without the corniness that sometimes comes with contemporaneity—there’s the (evil? stupid? neutral?) kinds of spells that, for better or for worse, enchant our late-modern world: an Uber-type driver who appears and disappears at will, the mystery of Instagram virality, a rock of black “goth” molly that turns “purple, lustrous” under the iPhone flashlight.
+<br><br>
+In <i>Hollow Nacelle</i>, magic is in minor stuff: the hypnotic choreography of a fly buzzing around a room, or when “amorphous furniture leans out of itself, gets nervous, returns to shape.” A car pulls up; your crush is inside. It’s when, as one chapter title goes, “bb thinks of lov and then she texts him.” My favorite line of dialogue is “Bro, I watch porn incognito. It’s like, tradition.” I guess I like it because it’s funny, but not even very much so; not super witty or anything, but just a thing to say while fiddling with the radio volume.
+<br><br>
+In 2016, Lil Peep, right on the brink of blowing up for real, says, between cuts to dimly glowing desert flowers and the sad wings of moths, while wandering around a gray roof overlooking the cloud-covered Hollywood hills: “If you wanna live a dream, I ain’t coming bitch I told you.” He did, though. Until he didn’t. And, through Eggleston’s characters, so do we—living and dying in the downtime between reveries, fits of boredom and creativity, doctor’s offices and wedding parties, sleeping and waking up. Until the book is over, and it all begins elsewhere.
+    </div>
+       <br><br><br>
+    <div>
+        12/17/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/12/17/our-staffs-favorite-books-of-2021/'>"https://www.theparisreview.org/blog/2021/12/17/our-staffs-favorite-books-of-2021/"</a><br> 
+
+D.A. Miller’s <i>Jane Austen, or the Secret of Style</i> is a dazzling close reading of Austen’s prose style that is also an obsessive mirroring of it. I love fan fiction; this is fan criticism. Miller quotes Barthes: “Whatever its sophistication, style has always something crude about it.” Indeed, the whole book, which is also about Miller being gay and Austen being unmarried, is “a bit much,” just like the clothes I most covet—that’s why it’s so good. Analyzing a jewelry-shopping scene in <i>Sense and Sensibility</i>:<br>
+	"As the figurative manufactory of the brilliant, the sparkling, the precious, the lapidary, the engraved … the jewelry shop must be the natural mise-en-abîme of Austen Style… Simultaneously determined by narrative thematics and the course of stylistic reflection, the shop situates a collision between the claims of the literal gem, a properly functional item … and those of the figurative gem, an eminently aesthetic thing whose social destination is vague, mysterious, trifling, troublesome."<br>
+Miller’s argument is too intricate to intimate here, but this book is really for anyone who loves language (especially the thesaurus-addicted, adjective-infested, alliterative, “bad” kind you’re not supposed to like); or mean girls; or sparkling, precious, perfect diamonds.
+<br><br>
+Three more well-styled books:<br><br>
+Stanley Cavell’s <i>Pursuits of Happiness</i>: Cavell writes with a grace and care appropriate to the subject of his chosen genre (the subtitular Hollywood Comedy of Remarriage), which is romantic love: a special kind of love that is crafted, most of all, through conversation. So he speaks with us about how he loves the films he does, i.e., how best to write and think about and with them. Like a good boyfriend, he steers us through his argument with a steady hand. I most liked his descriptions of these movies’ mythic personalities—Cary Grant, Jimmy Stewart, Lauren Bacall, Katharine Hepburn—and how the aura of each changes the way the camera sees a scene.
+<br><br>
+Guys like Yukio Mishima because of the politics-and-violence demons they struggle with, but the pathologies that take center stage in Star, a lesser-known novella of his translated from the Japanese by Sam Bett, are more for girls. This book is preoccupied with describing the physiognomies and facial expressions of more or less beautiful men and women, and how being more or less beautiful mars their personalities forever. There are also good descriptions of wearing clothes, and lines of sight.<br>
+        <div style="excerpt">"Eyes, countless as the gravel at a shrine, pressed in all around me. They found their center—my image coalesced. In that moment, dressed as a yakuza, I became a sparkling apparition, like a scepter thrust against the sky."</div>
+	<br>
+Mishima’s simplicity and precision are admirable; his writing is less “cinematic” than like a detailed script (as befits his sociopathic movie star protagonist). But what makes the book fun are the bouts of bad figurative language to which our narcissistic narrator is given, especially in his most main-character moments:<br> 
+"I like to have a mint before a kissing scene… I assumed a stoic air, knotted my tie, rolled up my sleeves, and shook a few mints into my palm. Against my skin, these prosaic pellets felt like currency, little symbols of the kisses I relied on for my livelihood."
+<br><br>
+Jane Unrue’s <i><b>Life of a Star</b></i>, conversely, features a hyperfeminine hysteric suffering/enjoying delusions of grandeur. The story is structured like a creepy hedge maze and proceeds in a strange, vacillating fashion: some pages are nearly blank, some are painstakingly covered.<br>
+	"When I am not engaged in matching gazes with the gentleman on horseback posing proudly at the foot of his estate, or with the praying servant boy illuminated by a painted glow of holy-looking light, or with the tiny waxen likenesses in boxy gilt-edged frames, I often find that I am exiting the Gallery of Art and veering toward the little bridge that signals that the northern pathway through the Public Garden is about to take me in the direction of that fountain on so many seemingly ordinary afternoons."<br>
+The protagonist herself, what’s happening to her—the plot—vanishes into this baroque, perversely disordered prose, which is like a schizophrenic daydream of what language could be. The effect is astonishing; no one writes like Unrue! (I also like <i>The House</i> and <i>Love Hotel</i>.)
+
+    </div>
+       <br><br><br>
+    <div>
+        9/30/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/'>"https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/"</a><br> 
+  
+
+Four years after its first chapter was published on SB Nation in 2017, Jon Bois’s serialized multimedia novella <i>17776: The Future of Football</i> is still my favorite (and some of the only) “new media” lit online. Told through text interspersed with video and graphics that mix satellite imagery, newspaper clippings, and Telestrated sports-field diagrams, the story follows the sentient space probe Pioneer 9 as it flies over the United States of the future: a land in which no one dies any more, but everyone still loves football. With their newfound immortality, Americans have developed more and more baroque constellations of rules for their favorite game, sending their players on elaborate, millennia-long scavenger hunts across the country. An epic reminiscent of Infinite Jest, it’s a dazzlingly idiosyncratic work of art that is equal parts exercise in speculative game design, history of a dying empire, and fable about the meaning of play, humanity, and technology. But 17776 isn’t just an experiment with form; Bois is a startlingly sensitive writer, and scrolling through his simple, color-coded dialogue feels like looking at the 1967 photo of Earth taken by an astronaut on the Apollo 8 mission: lonely, but awe-inducing
+    </div>
+       <br><br><br>
+    <div>
+        9/30/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/'>"https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/"</a><br> 
+  
+
+Four years after its first chapter was published on SB Nation in 2017, Jon Bois’s serialized multimedia novella <i>17776: The Future of Football</i> is still my favorite (and some of the only) “new media” lit online. Told through text interspersed with video and graphics that mix satellite imagery, newspaper clippings, and Telestrated sports-field diagrams, the story follows the sentient space probe Pioneer 9 as it flies over the United States of the future: a land in which no one dies any more, but everyone still loves football. With their newfound immortality, Americans have developed more and more baroque constellations of rules for their favorite game, sending their players on elaborate, millennia-long scavenger hunts across the country. An epic reminiscent of Infinite Jest, it’s a dazzlingly idiosyncratic work of art that is equal parts exercise in speculative game design, history of a dying empire, and fable about the meaning of play, humanity, and technology. But 17776 isn’t just an experiment with form; Bois is a startlingly sensitive writer, and scrolling through his simple, color-coded dialogue feels like looking at the 1967 photo of Earth taken by an astronaut on the Apollo 8 mission: lonely, but awe-inducing
+    </div>
+       <br><br><br>
+    <div>
+        9/30/21 <a class='mylink' href='https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/'>"https://www.theparisreview.org/blog/2021/09/30/the-reviews-review-strangers-and-the-moon/"</a><br> 
+  
+
+Four years after its first chapter was published on SB Nation in 2017, Jon Bois’s serialized multimedia novella <i>17776: The Future of Football</i> is still my favorite (and some of the only) “new media” lit online. Told through text interspersed with video and graphics that mix satellite imagery, newspaper clippings, and Telestrated sports-field diagrams, the story follows the sentient space probe Pioneer 9 as it flies over the United States of the future: a land in which no one dies any more, but everyone still loves football. With their newfound immortality, Americans have developed more and more baroque constellations of rules for their favorite game, sending their players on elaborate, millennia-long scavenger hunts across the country. An epic reminiscent of Infinite Jest, it’s a dazzlingly idiosyncratic work of art that is equal parts exercise in speculative game design, history of a dying empire, and fable about the meaning of play, humanity, and technology. But 17776 isn’t just an experiment with form; Bois is a startlingly sensitive writer, and scrolling through his simple, color-coded dialogue feels like looking at the 1967 photo of Earth taken by an astronaut on the Apollo 8 mission: lonely, but awe-inducing
+    </div>
+</body>
+    
+
+   
+</html>
