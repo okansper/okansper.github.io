@@ -2,8 +2,9 @@
 <html lang="en-US"> <!-- specifying language is important for screen readers and search engines -->
 <meta name="keywords" content="Olivia Kan-Sperling" charset="utf-8">
 
-<head>
+<head >
   <title>Olivia Kan-Sperling</title>
+    <base target="_blank">
 </head>
 
 <style>
@@ -75,9 +76,7 @@
     }
     .headertext{
         color:white;
-      
         font-family: monospace;
-        text-decoration-color: mediumorchid;
          text-align: center;
     }
     .smalltext{
@@ -88,13 +87,23 @@
         font-family: monospace;
     }
     
-.grayscale{
+    .grayscale{
         filter: grayscale(85%);
         opacity:25%;
     }
+    
+
+    .hide{
+        display:none;
+    }
+    a:hover {
+      color:black;
+    }
  
 </style> 
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="indexdynamic.js" type="text/javascript"></script>
 
 <body>
   <!--  <div id="div1"> <img style="position:absolute; top:5px; right:5px; width:110px; opacity:50%" src='ring_pictures/fountain.png'></div>
@@ -117,40 +126,45 @@
     </script>-->
     
     <div class='circle-container'>
-        <a href='https://expatpress.com/product/island-time-olivia-kan-sperling/' ><img src='island_time/book%20mockup.png' style="position=relative; width:140px" class='center'></a>
-        <a href='https://expatpress.com/product/island-time-olivia-kan-sperling/' class='mylink'><img src='island_time/title2.png' style="position=relative; top:-75%; width:140px" class="center" ></a>
         
-        <div style="position:absolute; z-index: 3; top:65%; left:30%; width:150px;"><a class='headertext' href='https://expatpress.com/product/island-time-olivia-kan-sperling/'><i><b>MODERNIST VIRTUAL WORLD FANFIC NOVELLA (buy)</b></i></a></div>
-        <div style="position:absolute; z-index: 3; top:53%; left:55%; width:200px;"><a class='headertext' href='https://expatpress.com/interview-with-olivia-kan-sperling/'>interview <i>(Expat)</i></a></div>
-    <div style="position:absolute; z-index: 3; top:63%; left:55%; width:200px;"><a class='headertext' href='https://forevermag.net/Island-Time-Olivia-Kan-Sperling'>excerpt <i>(Forever Mag)</i></a></div>
+<!--        //CENTERPICS-->
+        <a href='https://expatpress.com/product/island-time-olivia-kan-sperling/' ><img class='islandtime' src='island_time/book%20mockup.png' style="position=relative; width:140px" class='center'></a>
+        <a href='https://expatpress.com/product/island-time-olivia-kan-sperling/' class='mylink islandtime'><img src='island_time/title2.png' style="position=relative; top:-75%; width:140px" class="center" ></a>
+        
+<!--        //CENTERTEXT-->
+        <div style="position:absolute; z-index: 3; top:54%; left:30%; width:150px;"><a class='islandtime headertext' href='https://expatpress.com/product/island-time-olivia-kan-sperling/'><i><b>MODERNIST VIRTUAL WORLD FANFIC NOVELLA (buy)</b></i></a></div>
+        <div style="position:absolute; z-index: 3; top:53%; left:50%; width:200px;"><a class='islandtime headertext' href='https://expatpress.com/interview-with-olivia-kan-sperling/'>interview <i>(Expat)</i></a></div>
+    <div style="position:absolute; z-index: 3; top:63%; left:50%; width:200px;"><a class='islandtime headertext' href='https://forevermag.net/Island-Time-Olivia-Kan-Sperling'>excerpt <i>(Forever Mag)</i></a></div>
          
-        <div style="position:absolute; z-index: 3; top:17%; left:84%; width:100px;"><a class='mylink' href='kendall/intro.html'>E-Reader Experiment (bad) (draft)</a></div>
-         <div style="position:absolute; z-index: 3; top:41%; left:-23%; width:290px;"><a class='mylink' href='index_files/Kan-Sperling_Thesis.pdf'> ~ Coding as Writing as Critique ~</a></div>
-        <div style="position:absolute; z-index: 3; top:55%; left:-27%; width:290px;"><a class='mylink smalltext' href='index_files/Kan-Sperling_Thesis.pdf'>(college thesis derrida foucault deleuze)</a></div>
-        <div style="position:absolute; z-index: 3; top:54%; left:84%; width:230px;"><a class='mylink' href='reviews.html'>Reviews & Press Releases</a></div>
+<!--        //RING TEXT-->
+        <div style="position:absolute; z-index: 3; top:17%; left:89%; width:100px;"><a class='mylink'style="color:#cced0e" href='kendall/intro.html'>E-Reader Experiment (bad) (draft)</a></div>
         
-        <div style="position:absolute; z-index: 3; top:14%; left:8%; width:230px;"><a class='mylink' href='brandedcontent.html'>Branded Content </a></div>
+        <div style="position:absolute; z-index: 3; top:45%; left:-23%; width:290px;"><a class='mylink' style="color:#fa531b" href='index_files/Kan-Sperling_Thesis.pdf'> ~ Coding as Writing as Critique ~</a></div>
+        
+        <div style="position:absolute; z-index: 3; top:55%; left:-27%; width:290px;"><a class='mylink smalltext' href='index_files/Kan-Sperling_Thesis.pdf'>(college thesis derrida foucault deleuze)</a></div>
+        
+        <div style="position:absolute; z-index: 3; top:54%; left:93%; width:230px;"><a class='mylink' style="color:#eb3b87" href='reviews.html'>Reviews & Press Releases</a></div>
+        
+        <div style="position:absolute; z-index: 3; top:14%; left:8%; width:230px;"><a class='mylink'style='color:#1ad993' href='brandedcontent.html'>Branded Content</a></div>
         <div style="position:absolute; z-index: 3; top:17%; left:7%; width:230px;"><a class='smalltext' href='brandedcontent.html'>(My First Poem / Mad Men)</a></div>
         
 <!--        <img style="position:relative; z-index: 2; top:14%; left:84%; width:130px; opacity:50%" src='ring_pictures/fountain.png'>-->
+<!--        //SUPPLEMENTARY PICTURES-->
         <img style="position:relative; z-index: 0; top:36%; left:-16%; width:80px; opacity:50%" src='ring_pictures/Screen%20Shot%202021-12-31%20at%2001.48.03.png'>
         <img style="position:relative; z-index: 0; top:-5%; left:10%; width:120px; opacity:85%" src='ring_pictures/mulberryzinespread.png'>
         
-        
+<!--        //RING CIRCLE PICTURES-->
         <a href='reviews.html' class='circleimg deg0'><img src='kendall/assets/coin.gif'></a>
         <a href='https://twitter.com/diamonddustpaw' style="z-index: 1" class='circleimg grayscale deg45'><img src='ring_pictures/sarah.png'></a>
         <a href='index_files/Kan-Sperling_Thesis.pdf' style="z-index:5" class='deg180'><img src='kendall/assets/infinity.gif'></a>
         <a href='#' class='grayscale circleimg deg135'><img src='ring_pictures/travis%20scott%20sleeping%20in%20car.png'></a>
         <a href='#' class='circleimg deg225'><img src='ring_pictures/star%20grapes.jpg'></a>
-<!--        <a href='#' class='circleimg deg225'><img src='ring_pictures/IMG_9996.jpg'></a>-->
-<!--        <a href='#' class='grayscale circleimg deg225'><img src='ring_pictures/kylie%20in%20pool.png'></a>-->
         <a href='kendall/intro.html' style="z-index:1"  class='deg315'><img  src='kendall/assets/eyegray.gif'></a>
     </div>
     <div style="position:absolute; right:2%;">oliviakansperling <span ><img src='index_files/at.png' style='width:15px;height:15px'></span> gmail.com</div>
+    <div class="hide" id="islanddetail" style="position:absolute; top:50px; right:2%;"><img src='index_files/back%20cover.png' style='width:250px;height:auto;opacity: 80%'></div>
 <!--    <img style="position:absolute; width:100%; height:100%; z-index:1" src="ring_pictures/Orange_Mobius_Strip.png">-->
     
 </body>
     
-
-   
 </html>
