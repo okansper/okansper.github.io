@@ -10,13 +10,22 @@
   body { 
 
     background-color: #cccccc;
-    background-image: url('index_files/cloudscrop.jpg');
+    background-image: url('index_files/fabric%20blowout.jpeg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
     font-family: helvetica;
     font-size: 15px;
     
+    }
+    .circle-container {
+        width: 10em;
+        height: 10em;
+        padding: 0.1em;
+        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+        border: dashed 1px;
+        border-radius: 50%;
+        margin: 3em auto 0;
     }
 
     .excerpt{
@@ -58,6 +67,13 @@
 
     
 <body>
+    <div class='circle-container' style="position:absolute; top:50%; left:30%; z-index:5;" >  
+        <a class="mylink" href='index.html' style="z-index:5">
+        <b> <<<< Back / Home / Main / 
+            Fiction, Essays, Misc.<br></b></a><br><br>
+        <div >oliviakansperling <span ><img src='index_files/at.png' style='width:15px;height:15px'></span> gmail.com</div>
+    </div>
+    
     <div style="position:absolute; right:28%; top:30%; padding-bottom: 5px; z-index: 1;">MULBERRY Poem <a class='mylink' href='index_files/mulberryzine.pdf'>"Golden Sunset Sun Lens Flare" (Mad Men)</a>
     </div>
     <img class='' style="position:absolute; right:1%; top:10%; width:670px;" src='index_files/mulberrypoem.jpg'>
