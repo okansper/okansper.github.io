@@ -25,7 +25,8 @@
 
   h1 {color: black;}
   p {color: black;
-    font-family: monospace;}
+    font-family: monospace;
+    text-decoration: none;}
   button {background-color: Transparent; background-repeat:no-repeat; border: none;
     cursor:pointer; overflow: hidden; outline:none;}
 
@@ -73,10 +74,12 @@
         color:white;
         font-family: monospace;
         font-size: 13px;
+        text-decoration: none;
     }
    
     .mytextblock{
         width: 50px;
+        text-decoration: none;
         height:auto;
     }
     
@@ -85,6 +88,7 @@
         font-family:monospace;
         font-size:12px;
         text-align: right;
+        text-decoration: none;
     }
 
     .headertext1{
@@ -92,6 +96,7 @@
         font-family:monospace;
          text-align: left;
         font-size:12px;
+        text-decoration: none;
     }
     .smalltext{
         color:lightgray;
@@ -99,6 +104,7 @@
         width:auto;
         font-size:smaller;
         font-family: monospace;
+        text-decoration: none;
     }
     
     .grayscale{
@@ -110,7 +116,15 @@
         display:none;
     }
     a:hover {
-      color:black;
+      color:red;
+    }
+    .highlights{
+        font-family: monospace;
+        font-size: 15px; 
+        color: #02b3b0;
+        text-decoration: none;
+        -webkit-text-stroke-width: 0.2px;
+        -webkit-text-stroke-color: black;
     }
  
 </style> 
@@ -152,7 +166,7 @@
     </div>
 <!--        //TEXT-->
 
-    <span style="position:absolute; z-index: 3; top:45%; right:27%;"><a class='mytextblock mylink' style='color:red'href='writing.html'><b>MORE WRITING<br>(reviews/interviews)</b></a></span>
+    <span style="position:absolute; z-index: 3; top:40%; right:45%;"><a class='mytextblock mylink' style='color:red'href='writing.html'><b>MORE WRITING<br>(reviews/interviews)</b></a></span>
     <div style="position:absolute; z-index: 3; top:37%; left:8%"><a class='mylink mytextblock' href='index_files/Kan-Sperling_Thesis.pdf'>~Coding as Writing<br>as Critique ~</a></div>
     
     <!--RIGHTHAND SIDE images-->
@@ -167,19 +181,29 @@
     <div class="mylink" id="" style="position:absolute; top:410px; right:22%; z-index: -1">
         <a href='index_files/The%20Poison%20Glove.pdf'><img src='index_files/poisonglove.png' style='width:250px;height:auto;opacity: 65%'></a>
         </div>
+    <div class="mylink" id="" style="position:absolute; top:210px; right:30%; z-index: -1">
+        <a href='index_files/Lascaux%20Caves_Numbers.pdf'><img src='index_files/Balenciaga_Numbers_Page_2.jpg' style='width:200px;height:auto;opacity:85%'></a>
+        </div>
+    <div class="mylink" id="" style="position:absolute; top:510px; right:20%; z-index: -3">
+        <a href='index_files/airbnb%20richard%20kern_KALEIDOSCOPE.pdf'><img src='index_files/airbnb2.png' style='width:200px;height:auto;opacity: 65%'></a>
+        </div>
     </div>
     
     
     <!--RIGHTHAND LINKS-->
-    <div style="position:absolute; right:10%; top:500px">
-        <div><a class='smalltext' href='https://www.channel.xyz/episode/0xf6a73e5ca46ab0b1889bd9a5932fda95d281fea491d72ef26cca8355dff29ccd'>Code Couture: On the Programming Logic of Style ~ New Models Episode 60</a></div>
-        <div><a class='smalltext' href='https://anchor.fm/contain/episodes/137--Theory-of-a-Short-Wave-Trend---Olivia-Kan-Sperling-e1rovb2'>Theory of a Short-Wave Trend ~ Contain Podcast</a></div>
-        <div><a class='smalltext' href='https://heavytrafficmagazine.com/issue-2/'>"The Perfect Glove" ~ Short Story in <i>Heavy Traffic II</i></a></div>
-        <div><a class='smalltext' href='https://www.theparisreview.org/blog/2022/12/09/madeleine-event-dispatch/'><i>Paris Review</i> Madeleine Event Dispatch: Interpreting Pastry (Proust) ~ https://www.theparisreview.org/blog/2022/12/09/madeleine-event-dispatch/</a></div>
-        <div><a class='smalltext' href='https://www.noagency.nyc/shop/no-erotica-2'>No Agency (Ed. of 100) ~ Emily in Paris x Amélie  Marquis de Sade Pastiche ~https://www.noagency.nyc/shop/no-erotica-2/</a></div>
-        <div><a class='smalltext' href='https://lucky-jewel.com/shop-1/xk596bbdr5crc9e9df2myp58h0tfg5'>Valentine's Day Semiotics Card ~ Lucky Jewel (where you can also buy <i>Island Time</i> IRL)</a></div>
-        <div><a class='smalltext' href='https://www.praxissociety.com/journal/fabric-of-reality-moodboard'>Fabric of Reality: A Figurative Language Moodboard (Lacan) (Praxis Journal) ~ https://www.praxissociety.com/journal/fabric-of-reality-moodboard/</a></div>
-        <div><a class='smalltext' href='https://www.cabinetmagazine.org/kiosk/kan-sperling_olivia_28_august_2019.php'>Dynamicland and the Whimsical Digital Object (Cabinet) ~ https://www.cabinetmagazine.org/kiosk/kan-sperling_olivia_28_august_2019.php/</a></div>
+    <div class="highlights" style="position:absolute; left: 50px; top:500px;">
+        <div><a class='highlights' href='index_files/Lascaux%20Caves_Numbers.pdf'>Diagram for a Lascaux Cave Banquet (Kim's 42nd Birthday that Never Was) — <i>NUMBERS</i> Magazine 2</a></div>
+        <div><a class='highlights' href='index_files/airbnb%20richard%20kern_KALEIDOSCOPE.pdf'>Airbnb Richard Kern - <i>KALEIDOSCOPE</i> Magazine</a></div>
+        <div><a class='highlights' href='https://spikeartmagazine.com/?q=articles/discourse-emily-dickinson-apple-computer-house'>Joan Didion's Ghost Goes to the SKIMS Sale - <i>Spike</i> Magazine</a></div>
+        <div><a class='highlights' href='https://spikeartmagazine.com/?q=articles/discourse-emily-dickinson-apple-computer-house'>Emily Dickinson's Apple Computer House - <i>Spike</i> Magazine</a></div>
+        <div><a class='highlights' href='https://www.channel.xyz/episode/0xf6a73e5ca46ab0b1889bd9a5932fda95d281fea491d72ef26cca8355dff29ccd'>Code Couture: On the Programming Logic of Style ~ New Models Episode 60</a></div>
+        <div><a class='highlights' href='https://anchor.fm/contain/episodes/137--Theory-of-a-Short-Wave-Trend---Olivia-Kan-Sperling-e1rovb2'>Theory of a Short-Wave Trend ~ Contain Podcast</a></div>
+        <div><a class='highlights' href='https://heavytrafficmagazine.com/issue-2/'>"The Perfect Glove" ~ Short Story in <i>Heavy Traffic II</i></a></div>
+        <div><a class='highlights' href='https://www.theparisreview.org/blog/2022/12/09/madeleine-event-dispatch/'><i>Paris Review</i> Madeleine Event Dispatch: Interpreting Pastry (Proust) ~ https://www.theparisreview.org/blog/2022/12/09/madeleine-event-dispatch/</a></div>
+        <div><a class='highlights' href='https://www.noagency.nyc/shop/no-erotica-2'>No Agency (Ed. of 100) ~ Emily in Paris x Amélie  Marquis de Sade Pastiche ~https://www.noagency.nyc/shop/no-erotica-2/</a></div>
+        <div><a class='highlights' href='https://lucky-jewel.com/shop-1/xk596bbdr5crc9e9df2myp58h0tfg5'>Valentine's Day Semiotics Card ~ Lucky Jewel (where you can also buy <i>Island Time</i> IRL)</a></div>
+        <div><a class='highlights' href='https://www.praxissociety.com/journal/fabric-of-reality-moodboard'>Fabric of Reality: A Figurative Language Moodboard (Lacan) (Praxis Journal) ~ https://www.praxissociety.com/journal/fabric-of-reality-moodboard/</a></div>
+        <div><a class='highlights' href='https://www.cabinetmagazine.org/kiosk/kan-sperling_olivia_28_august_2019.php'>Dynamicland and the Whimsical Digital Object (Cabinet) ~ https://www.cabinetmagazine.org/kiosk/kan-sperling_olivia_28_august_2019.php/</a></div>
     </div>
 
     
