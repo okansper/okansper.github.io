@@ -62,7 +62,7 @@
 
   function init() {
     // Target the book link inside #LITTLEPINKBOOK
-    var bookDiv = document.getElementById("LITTLEPINKBOOK");
+    var bookDiv = document.getElementById("criticism");
     if (!bookDiv) return;
 
     // The second <a> tag is the text link (first is the image link)
